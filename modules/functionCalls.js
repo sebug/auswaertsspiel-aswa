@@ -4,4 +4,4 @@ async function getMessage() {
     return resultJson;
 }
 
-export getMessage;
+export { getMessage };
