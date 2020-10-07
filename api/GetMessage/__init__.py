@@ -7,6 +7,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
     message_text = os.environ["MESSAGE_TEXT"]
     logging.info(f'The message text is {message_text}')
+    # This should now have landed in App Insights
 
     name = req.params.get('name')
     if not name:
